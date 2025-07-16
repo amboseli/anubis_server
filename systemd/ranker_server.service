@@ -1,0 +1,13 @@
+[Unit]
+Description=ranker data server
+
+[Service]
+User=jdm187
+WorkingDirectory=/home/jdm187/guinea_server
+ExecStart=node server.js
+# optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

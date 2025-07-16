@@ -1,0 +1,4 @@
+node_modules
+build
+nohup.out
+package_lock.json

@@ -1,0 +1,13 @@
+[Unit]
+Description=ranker application
+
+[Service]
+User=root
+WorkingDirectory=/opt/ranker/guinea
+ExecStart=npm start
+# optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
